@@ -26,7 +26,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private static HashMap<String, OrderOverview> map = new HashMap<String, OrderOverview>();
-    ;
 
     @RequestMapping(value = "/order", produces = "application/json;charset=UTF-8", method = RequestMethod.GET)
     public void orderGet(@RequestParam(value = "userId") String userid, HttpServletResponse response) {
